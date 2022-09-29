@@ -7,10 +7,12 @@
         *{
             margin: 0;
             padding: 0;
+            color: wheat;
         }
         fieldset{
-            margin-left: 10px;
-            margin-right: 50%;
+            margin: 0 auto;
+            width: 0px;
+            border: 4px solid grey;
             margin-top: 10px;
         }
         fieldset legend{
@@ -18,16 +20,57 @@
             font-weight: bold;
         }
         table{
-            height: 440px;
+            padding: 15px;
+            height: 435px;
         }
         table td{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 500;
+            color: ;
         }
         table input[type="text"],input[type="email"],input[type="passward"]{
             width: 200px;
             background-color: wheat;
             opacity: 0.5;
+        }
+        table input[type="radio"]{
+            margin: 0px 10px;
+        }
+        .chekbox{
+            margin: 0px 10px;
+        }
+        .file{
+            color: white;
+        }
+        #select{
+            background-color: rgb(217, 240, 166);
+            width: 200px;
+            color: black;
+        }
+        #select option{
+            background-color: rgb(243, 174, 91);
+        }
+        #textarea{
+            background-color: rgb(153, 238, 238);
+            color: lightslategrey;
+        }
+        .button{
+            width: 120px;
+            height: 25px;
+            margin:0 75px;
+            color: white;
+            border-radius: 20px;
+            background-color: rgb(141, 83, 6);
+            transition: 0.5s;
+            cursor: pointer;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+            border:2px solid cadetblue;
+        }
+        .button:hover{
+            box-shadow: 4px 5px 3px rgb(245, 156, 156);
+            color: white;
+            background-color: rgb(245, 156, 156);
         }
     </style>
 
@@ -80,7 +123,7 @@
             </tr>
             <tr>
                 <td>Profile :</td>
-                <td><select name="" id="">
+                <td><select name="" id="select">
                         <option value="">UI Developer</option>
                         <option value="">Backend Developer</option>
                         <option value="">Full Stack Developer</option>
@@ -94,11 +137,11 @@
             </tr>
             <tr>
                 <td>Present Address :</td>
-                <td><textarea name="" id="" cols="50" rows="6"></textarea></td>
+                <td><textarea name="" id="textarea" cols="50" rows="6"></textarea></td>
             </tr>
             <tr>
-                <td><input type="submit" value="submit" class="button"><input type="reset" class="button" value="clear">
-                </td>
+                <td><input type="submit" value="submit" class="button"></td>
+                <td><input type="reset" class="button" value="clear"></td>
             </tr>
         </table>
     </fieldset>
