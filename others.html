@@ -3,15 +3,45 @@
 
 <head>
     <title>Employee Application Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        fieldset{
+            margin-left: 10px;
+            margin-right: 50%;
+            margin-top: 10px;
+        }
+        fieldset legend{
+            font-size: large;
+            font-weight: bold;
+        }
+        table{
+            height: 440px;
+        }
+        table td{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 500;
+        }
+        table input[type="text"],input[type="email"],input[type="passward"]{
+            width: 200px;
+            background-color: wheat;
+            opacity: 0.5;
+        }
+    </style>
+
 </head>
 
 <body>
     <form action="">
+        <caption>Employee Application Form</caption>
+        <fieldset>
         <table>
-            <caption><strong><big><u>Employee Application Form</u></big></strong></caption>
+                <legend>Employee Application Form</legend>
             <tr>
                 <td>Full Name :</td>
-                <td><input type="text" class="text" maxlength="20" required autofocus></td>
+                <td><input type="text" class="text" placeholder="Enter your Full name" required autofocus></td>
             </tr>
             <tr>
                 <td>Email Address :</td>
@@ -71,32 +101,9 @@
                 </td>
             </tr>
         </table>
+    </fieldset>
     </form>
     <a href="home.html" target="my_frame">Go Back To Home</a>
 </body>
-<style>
-    form {
-        background-image: url(background1.jpg);
-    }
-
-    table {
-        border: 2px solid grey;
-        margin-left: 20%;
-        padding: 20px;
-        background-image: url(background.jpg);
-    }
-
-    table,
-    th,
-    tr,
-    td {
-        margin: 10px;
-        padding: 7px;
-    }
-
-    .button {
-        margin: 20px;
-    }
-</style>
 
 </html>
